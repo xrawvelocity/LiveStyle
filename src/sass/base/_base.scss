@@ -30,6 +30,28 @@ body {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+    width: 7px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: $color-primary-1;
+}
+
 ::selection {
     background-color: $color-primary-1;
     color: $color-navy-1;
