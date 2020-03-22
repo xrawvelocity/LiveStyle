@@ -126,9 +126,8 @@ export default class Home extends Component {
                     <div key={uuid.v4()} className="tile">
                     
                         <div className="container">
-
+                        
                             <iframe width="100%" height="100%" title='test' src={`https://www.youtube.com/embed/${eachVideo.id.videoId}`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-
                             
                             <button onClick={() => this.addToFavoriteVideos(eachVideo.id.videoId, eachVideo.snippet.title)} className="tile--yt__fav-btn">Add to Favorites <i className="fas fa-check tile--yt__fav-btn__success"></i>
                             </button>
